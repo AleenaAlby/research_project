@@ -2,13 +2,14 @@ from rest_framework import serializers
 from .models import Task, Tile
 
 class TaskSerializer(serializers.ModelSerializer):
+    tile = serializers.PrimaryKeyRelatedField(queryset=Tile.objects.all())
     class Meta:
         model = Task
-        fields = ('id', 'title', 'order', 'description', 'task_type', 'tile')
+        fields = '__all__'
 
 class TileSerializer(serializers.ModelSerializer):
     tasks = TaskSerializer(many=True, read_only=True)
 
     class Meta:
         model = Tile
-        fields = ('id', 'launch_date', 'status', 'tasks')
+        fields = '__all__'
