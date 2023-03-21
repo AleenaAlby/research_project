@@ -22,8 +22,9 @@ Tiles: http://127.0.0.1:8000/api/tiles/
 
 ## Output
 
-<img src="output/Screenshot 2023-03-21 at 15.46.07.png" alt="Output Image" width="600" height="400">
-
+<img src="output/Screenshot 2023-03-21 at 15.46.07.png" alt="Output Image" width="500" height="400">
+<img src="output/Screenshot 2023-03-21 at 15.46.18.png" alt="Output Image" width="500" height="400">
+<img src="output/Screenshot 2023-03-21 at 15.45.57.png" alt="Output Image" width="500" height="400">
 
 
 ## License
