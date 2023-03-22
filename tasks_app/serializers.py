@@ -7,7 +7,7 @@ class TaskSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class TileSerializer(serializers.ModelSerializer):
-    tasks = TaskSerializer(many=True, read_only=True)
+    tasks = TaskSerializer(many=True)
 
     class Meta:
         model = Tile
